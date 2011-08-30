@@ -5,4 +5,5 @@ source "http://rubygems.org"
 gem 'stasis'   
 gem 'haml'      
 gem 'compass'
-gem 'coffee-script'
+gem 'coffee-script'  
+gem 'net-purge'
