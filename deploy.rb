@@ -7,6 +7,8 @@ require 'net-purge'
   Net::HTTP.start(name) do |http|
     request = Net::HTTP::Purge.new('/')
     response = http.request(request)
-    puts response.body # Guru Meditation
+    if response.class == NET::HTTPOK
+      puts "#{name}: Guru Meditiation"
+    end
   end
 end
