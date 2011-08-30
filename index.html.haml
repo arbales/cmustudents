@@ -1,0 +1,40 @@
+!!! 5
+%head
+  %meta{:charset => "utf-8"}/
+  %title="Change me..."
+  %meta{:content => "cmustudents.org is simple hosting for the Carnegie Mellon community.", :name => "description"}/
+  %meta{:content => "Austin Bales", :name => "author"}/      
+  %link{href: 'stylesheets/normalize.css', media: 'screen', rel: 'stylesheet', type: 'text/css'}
+  %link{href: 'stylesheets/style.css', media: 'screen', rel: 'stylesheet', type: 'text/css'}
+%body
+                                                       
+  %section.wrapper
+    %h1
+      %img{src:'images/cmustudents.png', alt:'cmustudents.org logo gem'}
+    %h2 Static (HTML), PHP, and Ruby Hosting for the Carnegie Mellon Community
+    %dl
+      %dt Easy
+      %dd Drag-and-Drop from the Finder or upload with SFTP
+      %dt Free
+      %dd Supported by donations from people like you.
+      %dt Friendly
+      %dd Run by an alum, bales@cmu.edu.                                                         
+      
+    %p.signup
+      %a{href: 'http://cmustudents.wufoo.com/forms/get-started-cmustudentsorg/'} Get Started
+      &nbsp;with an @andrew.cmu.edu or @cmu.edu address.
+    
+  
+  %script{src: 'javascripts/vendor/underscore.js'}
+  %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
+  %script{src: 'javascripts/init.js'}
+          
+  :javascript
+    var _gaq = [['_setAccount', 'UA-8402329-11'], ['_trackPageview']];
+    (function(d, t) {
+     var g = d.createElement(t),
+         s = d.getElementsByTagName(t)[0];
+     g.async = true;
+     g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     s.parentNode.insertBefore(g, s);
+    })(document, 'script');
